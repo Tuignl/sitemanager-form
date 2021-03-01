@@ -1,0 +1,124 @@
+
+/* CSS Grid */
+
+#contact-formulier {
+    display: grid;
+    gap: 20px 20px;
+    max-width:1200px;
+    margin:auto;
+    margin-top: 3rem;
+}
+
+#form-vraag {
+    height: 150px;
+}
+
+/* Positioneer formulierelementen bij grote schermen */
+
+@media only screen and (min-width: 800px) {
+    #contact-formulier {
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+    #contact-gegevens{
+        grid-column: 1;
+        grid-row: 1 / 7;
+    }
+    #form-naam, #form-verzend, #form-email {
+        grid-column: 2;
+    }    
+    #form-voornaam, #form-telefoon {
+        grid-column: 3;
+    }
+    #form-naam, #form-voornaam {
+        grid-row: 1;
+    }
+    #form-email, #form-telefoon {
+        grid-row: 2;
+    }
+    #form-vraag {
+        grid-column: 2 / 4;
+        grid-row: 3 / 5;
+        height: 259px
+    }
+    #form-accept {
+        grid-row: 5;
+        grid-column: 2 / 4;
+    }
+    #form-verzend {
+        grid-row: 6;
+    }
+    
+}
+
+/* Elementen stijlen */
+
+body, input, textarea{
+    font-family: "Encode Sans";
+    letter-spacing: 0.04em;
+    color:#235737;
+    font-size: 18px
+}
+
+a{
+    color: #63BB74;
+}
+
+textarea, input{
+    padding:10px;
+    color:#235737;
+    border: 1px solid rgba(35, 87, 55, 0.2);
+}
+input[type=text], input[type=emaiul], input[type=tel]{
+    height:53px;
+}
+
+h1{
+    margin: 0;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #235737;
+    padding-bottom:15px;
+    margin-bottom:4rem;
+    border-bottom: 3.94px solid #FCB731;
+    width:150px;
+}
+
+.light-text{
+    color: rgba(35, 87, 55, 0.8);
+    font-weight:300;
+}
+
+#form-accept{
+    display:flex;
+    align-items:center;
+    font-weight:900;
+    font-size: 16px
+}
+#form-accept input[type=checkbox]{
+    width: 28px;
+    height: 28px;
+    left: 530px;
+    top: 570px;
+    margin-right:10px;
+    background: #FFFFFF;
+    border: 1px solid rgba(35, 87, 55, 0.2);
+    border-radius: 0;
+    box-sizing: border-box;
+}
+#form-verzend{
+    width: 186px;
+    height: 56px;
+    background: #63BB74;
+    color:white;
+    text-transform: uppercase;
+    font-weight:700;
+    font-size:16px;
+    border: 0;
+    margin-top:10px;
+}
+.social-icon{
+    margin-right:1rem;
+}

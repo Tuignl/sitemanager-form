@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Sitemanager Form</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300;400;700;900&display=swap" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+    <form id="contact-formulier">
+
+        <div id="contact-gegevens">
+            <h1>Contact</h1>
+            <p>Projectadres</p>
+            <p class="light-text">Voskenslaan 97D, 9000 Gent</p>
+            
+            <p>Telefoonnummer</p>
+            <p class="light-text">+32 09 220 12 19</p>
+
+            <p>Email</p>
+            <p class="light-text">info@sitemanager.io</p>
+
+            <p>Social</p>            
+                <a href="#"><img src="images/facebook.svg" alt="Facebook" class="social-icon"></a>
+                <a href="#"><img src="images/instagram.svg" alt="Facebook" class="social-icon"></a>
+                <a href="#"><img src="images/twitter.svg" alt="Facebook" class="social-icon"></a>
+            
+        </div>
+        
+            <input id="form-naam" type="text" placeholder="Naam*"  required>
+            <input id="form-voornaam" type="text" placeholder="Voornaam*" required>
+            <input id="form-email" type="email" placeholder="Email*" required>
+            <input id="form-telefoon" type="tel" placeholder="Telefoonnummer">
+            <textarea placeholder="Uw vraag?*" id="form-vraag" required></textarea>
+            <div id="form-accept"><input type="checkbox" required><label>Neque porro quisquam est qui dolorem <a href="#">ipsum quia</a> dolor sit amet</label></div>
+            <input type="submit" value="Verzenden" id="form-verzend" onclick="verzendFormulier();">
+    
+    </form>
+
+
+</body>
+</html>
